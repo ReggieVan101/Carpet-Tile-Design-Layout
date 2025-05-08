@@ -1,0 +1,148 @@
+html, body {
+  height: 100%;
+  margin: 0; padding: 0;
+}
+#mainArea {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fafafa;
+}
+
+/* Tile selector */
+#tileSelector { width: 100%; margin-bottom: 12px; }
+#tileSelectorGrid {
+  display: flex; gap: 8px; overflow-x: auto; padding: 6px 0;
+  justify-content: center;
+}
+.tileWrapper { display: flex; flex-direction: column; align-items: center; }
+.tile {
+  width: 80px; height: 80px; background-size: cover;
+  background-position: center; border: 2px solid #ccc; position: relative;
+}
+.tile.selected { border-color: blue; }
+.counter {
+  position: absolute; top: 4px; right: 4px;
+  background: rgba(255,255,255,0.9); padding: 2px 4px;
+  border-radius: 3px; font-size: 0.75em;
+}
+.tile-label { margin-top: 4px; font-size: 0.7em; text-align: center; }
+.tile.total-display {
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+}
+
+/* Instructions */
+#instructions {
+  display: flex; width: 100%; background: #fff;
+  border: 1px solid #ccc; margin-bottom: 12px;
+}
+#instrList { flex: 1; padding: 8px; }
+#instrList ul { list-style: none; padding: 0; margin: 0; }
+#instrList li { margin-bottom: 6px; font-size: 0.9em; }
+.instr-3d {
+  background: #00457c; color: #fff; padding: 6px 8px;
+  border-radius: 4px; font-weight: bold; margin-top: 8px;
+}
+#instrTitle {
+  flex: 1; display: flex; justify-content: center; align-items: center;
+  font-family: Calibri, sans-serif; font-size: 2em; padding: 8px;
+}
+
+/* Workspace */
+#workspace {
+  display: flex; gap: 12px; justify-content: center; margin-bottom: 12px;
+}
+#grid {
+  background: #fff; border: 1px solid #ccc;
+  display: grid; flex-shrink: 0;
+}
+#controls {
+  width: 250px; background: #fff; border: 1px solid #ccc;
+  padding: 8px; display: flex; flex-wrap: wrap; gap: 6px; font-size: 0.85em;
+}
+#controls label { flex: 1 0 45%; }
+#controls input, #controls button {
+  flex: 1 0 45%; padding: 4px 6px; font-size: 0.8em; cursor: pointer;
+}
+
+/* 3D Viewer */
+#threeContainer {
+  flex: 1 1 auto; width: 100%; background: #000; border: 1px solid #ccc;
+}
+#threeContainer canvas {
+  display: block; width: 100% !important; height: 100% !important;
+}
+
+/* Cells */
+.cell {
+  background: #fdfdfd; background-size: cover; background-position: center;
+  border: 1px solid lightgray; position: relative; user-select: none;
+}
+.cell.filled { border: none; }
+.cell.active {
+  outline: 2px solid blue; outline-offset: -2px;
+}
+.cell.half-left {
+  clip-path: polygon(0 0,50% 0,50% 100%,0 100%);
+}
+.cell.half-right {
+  clip-path: polygon(50% 0,100% 0,100% 100%,50% 100%);
+}
+
+/* Modal */
+.modal {
+  display: none; position: fixed; top: 0; left: 0;
+  width: 100%; height: 100%; background: rgba(0,0,0,0.7);
+  justify-content: center; align-items: center;
+}
+.modal-content {
+  background: #fff; padding: 20px; border-radius: 5px; text-align: center;
+}
+.modal-content img {
+  max-width: 100%; margin: 8px 0;
+}
+.modal-content button {
+  margin-top: 8px; padding: 6px 10px;
+  background: #0066cc; color: #fff; border: none; border-radius: 4px; cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
