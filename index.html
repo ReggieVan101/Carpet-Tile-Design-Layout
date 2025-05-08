@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carpet Tile Design Layout Guide</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="mainArea">
+
+    <!-- Tile Selector -->
+    <div id="tileSelector">
+      <div id="tileSelectorGrid"></div>
+    </div>
+
+    <!-- Instructions -->
+    <div id="instructions">
+      <div id="instrList">
+        <ul class="instr-list">
+          <li>Build a grid by choosing the number of columns and rows.</li>
+          <li>Select a tile above.</li>
+          <li>Click or drag to place/clear.</li>
+          <li>Rotate the active cell.</li>
+          <li>Split the active cell’s tile with “Split Tile.”</li>
+          <li>Save image or double-click the 3D view to recenter.</li>
+          <li class="instr-3d">
+            3D Viewer: Left-drag to orbit •  Scroll to zoom
+          </li>
+        </ul>
+      </div>
+      <div id="instrTitle">Carpet Tile Design Layout Guide</div>
+    </div>
+
+    <!-- Grid + Controls -->
+    <div id="workspace">
+      <div id="grid"></div>
+      <div id="controls">
+        <label for="columns">Columns:</label>
+        <input type="number" id="columns" value="20" min="1" max="100" />
+        <label for="rows">Rows:</label>
+        <input type="number" id="rows" value="5" min="1" max="100" />
+        <button id="buildGrid">Build Grid</button>
+        <button id="rotateTile">Rotate Tile</button>
+        <button id="splitTile">Split Tile</button>
+        <button id="exportImage">Save Image</button>
+        <button id="clearGrid">Clear Grid</button>
+      </div>
+    </div>
+
+    <!-- 3D Viewer -->
+    <div id="threeContainer"></div>
+
+    <!-- Save-as-Image Modal -->
+    <div id="imageModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" id="closeModal">&times;</span>
+        <h3>Your Preview</h3>
+        <img id="imagePreview" alt="Layout Preview" />
+        <br />
+        <button id="downloadImage">Download Image</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Three.js and OrbitControls -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.125.2/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.125.2/examples/js/controls/OrbitControls.js"></script>
+  <!-- App scripts -->
+  <script src="three-viewer.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
